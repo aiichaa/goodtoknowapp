@@ -37,7 +37,8 @@ exports.createGTK = async function(req, res, next){
 
     var GTK = {
         action: req.body.action,
-        content: req.body.content
+        fr_content: req.body.fr_content,
+        ar_content: req.body.ar_content
     }
 
     try{
@@ -69,7 +70,8 @@ exports.updateGTK = async function(req, res, next){
     var GTK = {
         id,
         action: req.body.action ? req.body.action : null,
-        content: req.body.content ? req.body.content : null,
+        fr_content: req.body.fr_content ? req.body.fr_content : null,
+        ar_content: req.body.ar_content ? req.body.ar_content : null,
     }
 
     try{

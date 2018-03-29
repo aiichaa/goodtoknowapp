@@ -20,7 +20,8 @@ exports.createGTK = async function(gtk){
 
     var newGTK = new GTK({
         action: gtk.action,
-        content: gtk.content
+        fr_content: gtk.fr_content,
+        ar_content: gtk.ar_content
     })
 
     try{
@@ -47,7 +48,8 @@ exports.updateGTK = async function(gtk){
     console.log(oldGTK)
 
     oldGTK.action = gtk.action
-    oldGTK.content = gtk.content
+    oldGTK.fr_content = gtk.fr_content
+    oldGTK.ar_content = gtk.ar_content
 
 
     console.log(oldGTK)

@@ -4,7 +4,8 @@ var mongoosePaginate = require('mongoose-paginate')
 
 var GTKSchema = new mongoose.Schema({
     action: String,
-    content: String
+    fr_content: String,
+    ar_content: String
 })
 
 GTKSchema.plugin(mongoosePaginate)
