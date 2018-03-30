@@ -15,6 +15,8 @@ router.put('/', GTKController.updateGTK)
 
 router.delete('/:id',GTKController.removeGTK)
 
+router.get('/:id',GTKController.getGTK)
+
 
 // Export the Router
 

@@ -16,6 +16,24 @@ exports.getGTKs = async function(query, page, limit){
     }
 }
 
+exports.getGTK = async function(id){
+
+    try{
+        var gtk = await GTK.findById(id);
+    }catch(e){
+        throw Error("Error occured while Finding the GTK")
+    }
+
+    if(!gtk){
+        return false;
+    }else{
+        return gtk;
+    }
+
+}
+
+
+
 exports.createGTK = async function(gtk){
 
     var newGTK = new GTK({

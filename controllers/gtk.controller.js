@@ -31,6 +31,19 @@ exports.getGTKs = async function(req, res, next){
     }
 }
 
+exports.getGTK = async function(req, res, next){
+
+    var id = req.params.id;
+
+    try{
+        var gtk = await GTKService.getGTK(id)
+        return res.status(200).json({status: 200, data: gtk, message: "Succesfully found gtk"})
+    }catch(e){
+        return res.status(400).json({status: 400., message: e.message})
+    }
+
+}
+
 exports.createGTK = async function(req, res, next){
 
     // Req.Body contains the form submit values.
@@ -76,7 +89,7 @@ exports.updateGTK = async function(req, res, next){
 
     try{
         var updatedGTK = await GTKService.updateGTK(GTK)
-        return res.status(200).json({status: 200, data: updatedGTK, message: "Succesfully Updated Tod"})
+        return res.status(200).json({status: 200, data: updatedGTK, message: "Succesfully Updated gtk"})
     }catch(e){
         return res.status(400).json({status: 400., message: e.message})
     }
