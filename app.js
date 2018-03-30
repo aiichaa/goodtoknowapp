@@ -3,19 +3,31 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var api = require('./routes/api.route')
-
 var bluebird = require('bluebird')
 
 var app = express();
 
 var mongoose = require('mongoose')
-mongoose.connect('mongodb://127.0.0.1:27017/gtkapp')
+//connect to local mongodb
+/*mongoose.connect('mongodb://127.0.0.1:27017/gtkapp')
     .then(()=> { console.log(`Succesfully Connected to the Mongodb Database  at URL : mongodb://127.0.0.1:27017/gtkapp`)})
     .catch(()=> { console.log(`Error Connecting to the Mongodb Database at URL : mongodb://127.0.0.1:27017/gtkapp`)})
+*/
+//connect to mLab
+var mongoDB = 'mongodb://aiichaa:aiichaa@ds137464.mlab.com:37464/gtkapp';
+mongoose.connect(mongoDB)
+    .then(()=> { console.log(`Succesfully Connected to the Mongodb Database  at URL : mongodb://aiichaa:aiichaa@ds137464.mlab.com:37464/gtkapp`)})
+    .catch(()=> { console.log(`Error Connecting to the Mongodb Database at URL : mongodb://aiichaa:aiichaa@ds137464.mlab.com:37464/gtkapp`)});
+
+
+//keep heroku awake
+var http = require("http");
+setInterval(function() {
+    http.get("http://goodtoknowapp.herokuapp.com");
+}, 300000); // every 5 minutes (300000)
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "http://localhost:4200");
