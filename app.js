@@ -30,7 +30,7 @@ setInterval(function() {
 }, 300000); // every 5 minutes (300000)
 
 app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "http://localhost:4200");
+    res.header("Access-Control-Allow-Origin", "https://goodtoknowapp-angular.herokuapp.com");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
     next();
