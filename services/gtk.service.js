@@ -20,14 +20,9 @@ exports.getGTK = async function(id){
 
     try{
         var gtk = await GTK.findById(id);
-    }catch(e){
-        throw Error("Error occured while Finding the GTK")
-    }
-
-    if(!gtk){
-        return false;
-    }else{
         return gtk;
+    }catch(e){
+        throw Error("GTK was not found")
     }
 
 }

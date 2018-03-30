@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3236b1d6-9a29-4a79-a5b3-5ed062ed9307" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/gtk.controller.js" afterPath="$PROJECT_DIR$/controllers/gtk.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/api/gtk.route.js" afterPath="$PROJECT_DIR$/routes/api/gtk.route.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/gtk.service.js" afterPath="$PROJECT_DIR$/services/gtk.service.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -29,17 +27,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gtk.service.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="gtk.service.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/services/gtk.service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="268">
+              <caret line="24" column="38" lean-forward="false" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gtk.controller.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gtk.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/gtk.controller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -85,8 +83,8 @@
       <find>delete</find>
       <find>Tod</find>
       <find>http://localhost:4200</find>
-      <find>GTK is not defined</find>
       <find>is not defined</find>
+      <find>GTK is not defined</find>
     </findStrings>
     <replaceStrings>
       <replace>GTK</replace>
@@ -106,8 +104,8 @@
         <option value="$PROJECT_DIR$/models/gtk.model.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/api/gtk.route.js" />
-        <option value="$PROJECT_DIR$/services/gtk.service.js" />
         <option value="$PROJECT_DIR$/controllers/gtk.controller.js" />
+        <option value="$PROJECT_DIR$/services/gtk.service.js" />
       </list>
     </option>
   </component>
@@ -348,12 +346,12 @@
       <updated>1522353879179</updated>
       <workItem from="1522353881875" duration="5875000" />
       <workItem from="1522400368272" duration="2090000" />
-      <workItem from="1522410651549" duration="4116000" />
+      <workItem from="1522410651549" duration="4418000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12081000" />
+    <option name="totallyTimeSpent" value="12383000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="0" />
@@ -524,14 +522,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/gtk.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/api/gtk.route.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -544,6 +534,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="37" column="8" lean-forward="true" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/gtk.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="24" column="38" lean-forward="false" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
           <folding />
         </state>
       </provider>
