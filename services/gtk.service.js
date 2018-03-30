@@ -66,11 +66,11 @@ exports.deleteGTK = async function(id){
 
     try{
         var deleted = await GTK.remove({_id: id})
-        if(deleted.result.n === 0){
+        /*if(deleted.result.n === 0){
             throw Error("GTK Could not be deleted")
-        }
+        }*/
         return deleted
     }catch(e){
-        throw Error("Error Occured while Deleting the GTK")
+        throw Error("Error Occured while Deleting the GTK" + e)
     }
 }
