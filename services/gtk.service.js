@@ -3,16 +3,12 @@ var GTK = require('../models/gtk.model')
 _this = this
 
 
-exports.getGTKs = async function(query, page, limit){
-    var options = {
-        page,
-        limit
-    }
+exports.getGTKs = async function(){
     try {
-        var GTKs = await GTK.paginate(query, options)
+        var GTKs = await GTK.find()
         return GTKs;
     } catch (e) {
-        throw Error('Error while Paginating GTKs')
+        throw Error('Error while getting GTKs')
     }
 }
 

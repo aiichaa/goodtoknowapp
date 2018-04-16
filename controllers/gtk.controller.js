@@ -9,14 +9,9 @@ _this = this
 
 exports.getGTKs = async function(req, res, next){
 
-    // Check the existence of the query parameters, If the exists doesn't exists assign a default value
-
-    var page = req.query.page ? req.query.page : 1
-    var limit = req.query.limit ? req.query.limit : 10;
-
     try{
 
-        var GTKs = await GTKService.getGTKs({}, page, limit)
+        var GTKs = await GTKService.getGTKs()
 
         // Return the GTKs list with the appropriate HTTP Status Code and Message.
 
