@@ -24,10 +24,10 @@ mongoose.connect(mongoDB)
 
 
 //keep heroku awake
-var http = require("http");
+/*var http = require("http");
 setInterval(function() {
     http.get("http://goodtoknowapp.herokuapp.com");
-}, 300000); // every 5 minutes (300000)
+}, 300000); // every 5 minutes (300000)*/
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "https://goodtoknowapp-angular.herokuapp.com");
